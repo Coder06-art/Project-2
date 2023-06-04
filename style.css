@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* başlık kısmı */
+/* ortak alan */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #ffffff;
+}
+
+section{
+    min-height: 100vh;
+    background-color: #0a080a;
+
+}
+
+/* üst kısım */
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+
+header img{
+    width: 170px;
+}
+
+header nav{
+    display: flex;
+    gap: 25px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    transition: all 0.09s;
+}
+
+header nav a:hover{
+    color: black;
+    text-shadow: 2px 2px 2px 10px black;
+    transition: all 0.09s;
+}
+
+/* karşılama alanı */
+#welcome-sec{
+    background-image: url('/images/main.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.welcome-text{
+    width: 90vh;
+}
+
+.welcome-text h1{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px 10px black;
+}
+
+.welcome-text p{
+    max-width: 700px;
+    margin: 90px auto;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 2px 10px black;
+}
+
+/* hakkında alanı */
+#sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 0 50px;
+}
+
+.left-side{
+    max-width: 600px;
+}
+
+.left-side h1{
+    font-size: 75px;
+    line-height: 80px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid white;
+}
+
+.left-side p{
+    margin-top: 30px;
+}
+
+.left-side p span{
+    border-bottom: 3px solid crimson;
+}
+
+.question{
+    
+}
+
+.rigth-side{
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.rigth-side img{
+    width: 100%;
+    height: 100%;
+}
+
+/* gereksinimler alanı */
+#sec-2{
+    background-image: 
+    radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9)50%
+    ),
+    url(/images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.heading{
+    text-align: center;   
+}
+
+.heading h5{
+    text-transform: uppercase;
+    font-size: 24px;
+}   
+
+.heading h1{
+    font-size: 60px;
+   font-weight: 500;
+}
+
+.boxes{
+    width: 620px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.box:last-child{
+    width: 610px;
+}
+
+.box h2{
+    color: crimson;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.box p{
+    font-size: 18px;
+}
+
+#sec-3{
+    background-image: url(/images/sec-3.png);
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+
+#sec-3 .left{
+    max-width: 450px;
+}
+
+#sec-3 .left h3{
+    font-size: 24px;
+}
+
+#sec-3 .left h1{
+    font-size: 80px;
+}
+
+#sec-3 .left p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#sec-3 .left button{
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#sec-3 .left button:hover{
+    background-color: black;
+    color: red;
+    transition: all 0.4s;
+}
+
+
+#sec-3 .right{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: end;
+}
+
+.card{
+    width: 450px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card:nth-child(2){
+    align-self: flex-start;
+}
+
+.person-info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-detail h1{
+    color: crimson;
+}
+
+small {
+    color: gray;
+}
+
+/* 1500px altında */
+@media (max-width: 1500px){
+    .rigth-side {
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 40px;
+    }
+}
+/* 1100px altında */
+@media (max-width: 1100px){
+    #sec-1 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    body{
+        background-color: #0a080a;
+    }
+    #sec-3 {
+        flex-direction: column;
+    }
+    #sec-3 right {
+      align-items: center;
+      max-width: unset;
+    }
+ .card:nth-child(2){
+    align-self: center;
+ }
